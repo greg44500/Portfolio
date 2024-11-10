@@ -1,0 +1,80 @@
+/*GLOBALS*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLES */
+/*NAVIGATION*/
+nav {
+  width: 300px;
+  height: 100vh;
+  background: #BBC5AA;
+  box-shadow: 0px 8px 32px rgb(140, 156, 124);
+  position: fixed;
+  z-index: 100;
+}
+nav h1 {
+  color: #FDFDFB;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+nav li {
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+}
+nav li:hover {
+  color: #E6EED6;
+  transition: 300ms;
+}
+nav li a {
+  width: 100%;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #090C02;
+  color: #E6EED6;
+  transition: 300ms;
+}
+
+/*HOME SECTION*/
+section {
+  width: 100%;
+  margin-left: 300px;
+  color: black;
+}
+
+.formation-section {
+  visibility: hidden;
+  transform: translateX(100%);
+}
+.formation-section__title {
+  color: black;
+}
+
+.animate {
+  background-color: #FDFDFB;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  margin-left: 300px;
+  transform: translateX(0%);
+  transition: 1500ms ease-in-out;
+  visibility: visible;
+  z-index: 10;
+  color: black;
+}
+
+.remove {
+  transform: translateX(100%);
+  transition: 1500ms ease-in-out;
+}/*# sourceMappingURL=index.css.map */
